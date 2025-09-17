@@ -174,7 +174,8 @@ nav, .navLogo, .navitems, .navlist{
 }
 .banner-content{
     margin-top: 55px;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     color: white; 
 }
 .banner-content h1::after{
@@ -188,7 +189,7 @@ nav, .navLogo, .navitems, .navlist{
     background-size: contain;
 }
 .banner-content p{
-    margin: 50px 0;
+    margin: 45px 0;
 }
 .banner-btn,
 .banner-vid-btn{
@@ -197,9 +198,9 @@ nav, .navLogo, .navitems, .navlist{
 }
 
 .banner-vid-btn figure{
-    font-size: 66px;
+   width: 90px;
+   height: 90px;
     padding: 0 15px;
-    margin-top: 18px;
 }
 .banner-vid-btn a{
     font-size: 18px;
@@ -207,3 +208,111 @@ nav, .navLogo, .navitems, .navlist{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- Responsive Part ------------------- */
+
+/* xxl */
+@media screen and (max-width:1199px) {
+    .banner-content{
+        max-width: 650px;
+        width: 100%;
+        padding: 40px 0 0 80px;
+    }
+    .banner-content h1{
+        font-size: 60px;
+    }
+    
+}
+
+
+
+
+
+/* lg */
+@media screen and (max-width:991px) {
+    .navbarBrand {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navTogglar {
+        display: block;
+        color: white;
+    }
+
+    .navitems,
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .navBtn {
+        position: absolute;
+        right: 30px;
+    }
+
+    .banner-content{
+        max-width: 600px;
+        width: 100%;
+    }
+    .btn{
+        padding: 20px 30px;
+    }
+    .banner-vid-btn figure{
+        width: 85px;
+        height: 85px;
+    }
+}
+
+
+
+
+
+/* md */
+@media screen and (max-width:767px) {
+    .banner-content {
+            max-width: 500px;
+            width: 100%;
+            padding: 35px 0 0;
+        }
+    
+        .banner-content h1 {
+            font-size: 50px;
+        }
+}
+
+
+
+
+
+/* sd */
+@media screen and (max-width:575px) {
+
+}
