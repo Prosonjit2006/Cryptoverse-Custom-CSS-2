@@ -7,8 +7,30 @@
     src: url(../font/Outfit/Outfit-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Arca Majora 3;
+    src: url(../font/Arca-Majora-3/ArcaMajora3-Bold.otf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     background-color: #063745;
+    /* background-color: #0f1d25; */
 }
 
 *{
@@ -40,13 +62,16 @@ h1 span{
 h2{
     font-size: 45px;
     font-weight: bold;
+    font-family: Arca Majora 3;
 }
 h3{
     font-size: 27px;
     font-weight: 450px;
+    
 }
 h4{
     font-size: 20px;
+    font-family: Arca Majora 3;
 }
 
 .container{
@@ -59,6 +84,7 @@ h4{
 .row{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin:  0 -15px;
 }
 .col{
@@ -103,11 +129,13 @@ p{
     width: auto;
     color: white;
     background-color: #F8A501;
+    transition: background-color 0.5s ease-in-out;
 }
 .btn:hover{
     background-color: #d58f04;
     color: black;
 }
+
 
 /* =================== Navbar Part =================== */
 .navbar{
@@ -206,6 +234,109 @@ nav, .navLogo, .navitems, .navlist{
     font-size: 18px;
     color: white;
 }
+
+
+/* ================== Feture Part ======================== */
+/* left part */
+.feature-left{
+    color: white;
+}
+.card{
+    background-color: #042832;
+    border-radius: 7px;
+    padding: 50px 25px;
+    margin-bottom: 30px;
+    /* width: 320px; */
+    height: 330px;
+}
+.card figure{
+    width: 70px;
+}
+.poppins{
+    font-family: Poppins;
+    font-size: 15px;
+    color: white;
+}
+.siz27{
+    /* font-family: Arca Majora 3; */
+    /* font-size: 27px;
+    font-weight: bold; */
+    margin: 30px 0;
+}
+
+
+/* right part */
+.color{
+    font-family: Arca Majora 3;
+    color: #04DFBF;
+    font-size: 20px;
+}
+.feature-right{
+    font-family: Arca Majora 3;
+    padding: 5px 15px;
+}
+.feature-right h2{
+    color: white;
+    font-weight: 550;
+    margin: 30px 0;
+}
+.margin-bottom{
+    margin-bottom: 35px;
+}
+
+
+/* ============================= Market Price Part =============== */
+.market-price-content{
+    text-align: center;
+    color: white;
+}
+.market-price-content h2{
+    margin-top: 30px;
+}
+.market-price-content p{
+    font-family: Poppins;
+    max-width: 720px;
+    width: 100%;
+    margin: 24px auto 50px;
+}
+.card2{
+    color: white;
+    background-color: #042832;
+    border-radius: 7px;
+    padding: 25px;
+    width: 400px;
+    height: 250px;
+}
+.card2 figure{
+    width: 65px;
+}
+.card2-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+ .card2-content hr{
+    border: 1px solid rgba(74, 74, 74, 0.5);
+    margin: 10px 0;
+ }
+.card2-content p{
+    font-size: 12px;
+    text-align: center;
+    /* padding: 10px; */
+    
+}
+.card2-data figure{
+    width: 15px;
+}
+
+
+
+
+
+
+
+
 
 
 
