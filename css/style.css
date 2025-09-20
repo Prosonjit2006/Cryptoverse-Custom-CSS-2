@@ -1159,6 +1159,9 @@ nav,
         position: absolute;
         right: 30px;
     }
+    .showList{
+        display: block;
+    }
 
     .banner-content {
         max-width: 600px;
