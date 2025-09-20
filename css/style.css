@@ -853,6 +853,7 @@ nav,
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
 }
 
 /* .trading-content{
@@ -1083,6 +1084,10 @@ nav,
         width: 380px;
     }
 
+    .trading {
+        background-size: contain;
+        width: 110%;
+    }
 }
 
 
@@ -1109,7 +1114,9 @@ nav,
         margin-top: 20px;
     }
 
-
+    .center {
+        margin-left: 250px;
+    }
 
 
 
@@ -1201,7 +1208,18 @@ nav,
         left: 3.7%;
     }
 
-    .footer-right-top::after {
+    .offer {
+        /* background-image: cover; */
+        width: 110%;
+    }
+
+    .trading-content {
+        position: absolute;
+        left: 14%;
+        top: 17%;
+    }
+
+    .trading-content .footer-right-top::after {
         top: 175px;
         right: -85px;
     }
@@ -1234,6 +1252,16 @@ nav,
 
     .banner-content h1 {
         font-size: 50px;
+    }
+
+    .market-price-chart {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+
+        margin-left: 200px;
+
     }
 
     /* .team .container{
@@ -1281,6 +1309,12 @@ nav,
         left: -2%;
     }
 
+
+    .client,
+    .team .row {
+        margin-left: 200px;
+    }
+
     .margin-top {
         margin-top: 35px;
     }
@@ -1303,8 +1337,34 @@ nav,
 
 /* sd */
 @media screen and (max-width:575px) {
+    .banner-content {
+        max-width: 400px;
+        width: 100%;
+        padding: 35px 0 0;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+    }
+
     .banner {
         background-size: contain;
         width: 110%;
     }
+
+    .market-price-chart {
+        margin-left: 100px;
+    }
+
+    .client,
+    .team .row {
+        margin-left: 100px;
+    }
+
+    .footer-right-top::after {
+        top: 155px;
+        left: 297px;
+    }
+
+
 }
