@@ -5,6 +5,6 @@ let navlist = document.querySelector(".navlist");
 
 toggler.addEventListener("click", listDisplay);
 function listDisplay() {
-//   alert('cicked')
+  //   alert('cicked')
   navlist.classList.toggle("showList");
 }

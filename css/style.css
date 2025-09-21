@@ -1159,7 +1159,8 @@ nav,
         position: absolute;
         right: 30px;
     }
-    .showList{
+
+    .showList {
         display: block;
     }
 
